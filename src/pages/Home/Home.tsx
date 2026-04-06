@@ -1,12 +1,5 @@
-import Header from "../../componets/Header";
-
-
 function Home() {
-  return (
-    <>
-    <Header />
-    </>
-  );
+  return <></>;
 }
 
 export default Home;

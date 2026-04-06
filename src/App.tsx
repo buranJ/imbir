@@ -1,11 +1,11 @@
 import "./App.css";
-import Button from "./componets/UI/Button/Button";
+import Header from "./componets/Header/index";
 import Home from "./pages/Home/Home";
 
 function App() {
   return (
     <>
-    <Header />
+      <Header />
       <Home />
     </>
   );
