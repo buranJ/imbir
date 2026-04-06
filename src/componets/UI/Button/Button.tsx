@@ -1,7 +1,7 @@
+import "./button.scss";
 
-
-function Button() {
-  return <button>Button</button>;
+function Button({ children, color, bg }) {
+  return <button className="btn" style={{ backgroundColor: bg, color: color }}>{children}</button>;
 }
 
 export default Button;

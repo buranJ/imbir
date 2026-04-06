@@ -1,7 +1,7 @@
 
 
-function index() {
-  return <div>index</div>;
+function Header() {
+  return <header></header>;
 }
 
-export default index;
+export default Header;
