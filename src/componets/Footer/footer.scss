@@ -1,6 +1,5 @@
 .footer {
-    border-color: #FFF8F5;
-    padding: 40px;
+    margin-bottom: 40px;
 
     &__content {
         display: flex;
@@ -8,13 +7,15 @@
         align-items: center;
         gap: 96px;
         padding: 64px;
+        background: #FFF8F5;
+        border-radius: 40px;
     }
 
     &__top {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        align-items: center;
+        align-items: flex-start;
     }
 
     &__left {
@@ -26,6 +27,7 @@
 
     &__right {
         display: flex;
+        gap: 120px;
     }
 
     &__list {
@@ -44,17 +46,44 @@
         line-height: 130%;
         letter-spacing: 0%;
         list-style: none;
+        max-width: 170px;
+        text-decoration: none;
+
+        &-l {
+            max-width: 236px;
+        }
+
+        &-title {
+            color: #191A1B;
+            font-weight: 500;
+        }
 
     }
 
     &__media {
         display: flex;
         gap: 16px;
+
+        &-img {
+            width: 48px;
+            height: 48px;
+        }
     }
 
     &__logo {
         display: flex;
-        gap: 4px;
+        align-items: center;
+        gap: 14px;
+
+        &-1 {
+            width: 56px;
+            height: 56px;
+        }
+
+        &-2 {
+            width: 115px;
+            height: 48px;
+        }
     }
 
     &__text {

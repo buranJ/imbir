@@ -1,0 +1,122 @@
+.blog {
+    margin: 120px 0;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__title {
+        font-family: Onest;
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 40px;
+        color: #191A1B;
+        line-height: 130%;
+        letter-spacing: 0%;
+        margin-bottom: 16px;
+    }
+
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        gap: 40px;
+        margin-top: 48px;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+        border: 1px solid #E3E4E5;
+        padding: 8px;
+        border-radius: 16px;
+
+        &-img {
+            width: 644px;
+            height: 388px;
+            border-radius: 16px;
+        }
+
+
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &-text {
+            font-family: Onest;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 18px;
+            color: #FFA18D;
+            line-height: 130%;
+            letter-spacing: 0%;
+            display: flex;
+            gap: 16px;
+
+            span {
+                color: #838A8D;
+
+                &::before {
+                    content: "•";
+                    margin-right: 16px;
+                }
+
+            }
+
+        }
+
+        &-title {
+            font-family: Onest;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 24px;
+            color: #191A1B;
+            line-height: 130%;
+            letter-spacing: 0%;
+            margin-top: 16px;
+
+        }
+
+        &-desc {
+            font-family: Onest;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 18px;
+            color: #686F72;
+            line-height: 130%;
+            letter-spacing: 0%;
+            max-width: 612px;
+            margin-top: 8px;
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &-card {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            border: 1px solid #E3E4E5;
+            border-radius: 24px;
+            padding: 8px;
+
+            img {
+                height: 160px;
+                width: 160px;
+                border-radius: 16px;
+            }
+        }
+    }
+
+}

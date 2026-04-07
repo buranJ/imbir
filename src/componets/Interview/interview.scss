@@ -1,0 +1,133 @@
+.interview {
+    margin-top: 120px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &__nav{
+        position: relative;
+        width: 100%;
+    }
+
+    &__swiper {
+        width: 100%;
+      
+
+        &-prev,
+        &-next {
+            width: 20px;
+            height: 20px;
+            background: url('../../assets/icons/arrow.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+            position: absolute;
+            z-index: 10;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #E5E6E8;
+            border-radius: 100px;
+            bottom: 40%;
+
+        }
+
+        &-next{
+            transform: rotate(180deg);
+            right: 0;
+       
+        }
+        &-prev{
+            left: 0;
+        }
+    }
+
+    &__title {
+        font-family: Onest;
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 40px;
+        color: #191A1B;
+        line-height: 130%;
+        letter-spacing: 0%;
+
+    }
+
+    &__text {
+        font-family: Onest;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 18px;
+        color: #4C5052;
+        line-height: 130%;
+        letter-spacing: 0%;
+        margin-top: 16px;
+        margin-bottom: 40px;
+
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        border: 1px solid #E3E4E5;
+        border-radius: 24px;
+        padding: 8px;
+
+        &-wrap {
+            position: relative;
+        }
+
+        &-btn {
+            position: absolute;
+            top: 44%;
+            left: 44%;
+        }
+
+        &-img {
+            width: 424px;
+            height: 240px;
+            border-radius: 16px;
+
+        }
+
+        &-title {
+            font-family: Onest;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 20px;
+            leading-trim: NONE;
+            line-height: 130%;
+            letter-spacing: 0%;
+            color: #191A1B;
+        }
+
+        &-text {
+            font-family: Onest;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 16px;
+            color: #191A1B;
+            line-height: 130%;
+            letter-spacing: 0%;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 8px;
+
+            span {
+                color: #838A8D;
+
+                &::before {
+                    content: "•";
+                    margin-right: 16px;
+                    margin-left: 8px;
+                }
+
+            }
+
+        }
+    }
+}

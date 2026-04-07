@@ -9,7 +9,7 @@ function Footer() {
       <div className="footer__content">
         <div className="footer__top">
           <div className="footer__left">
-            <a href="" className="footer__logo"><img src={logo2} alt="" /><img src={logo} alt="logo" /></a>
+            <a href="" className="footer__logo"><img src={logo2} alt="" className="footer__logo-1"/><img src={logo} alt="logo" className="footer__logo-2"/></a>
             <div className="footer__media">
               <img src={media} alt="" className="footer__media-img" />
               <img src={media} alt="" className="footer__media-img" />
@@ -20,19 +20,22 @@ function Footer() {
      
         <div className="footer__right">
           <ul className="footer__list">
-            <li className="footer__item">Быстрые ссылки</li>
-            <li className="footer__item">Быстрые ссылки</li>
-            <li className="footer__item">Быстрые ссылки</li>
+            <li className="footer__item footer__item-title">Быстрые ссылки</li>
+            <li className="footer__item">Клиники</li>
+            <li className="footer__item">Специалисты</li>
+            <li className="footer__item">Услуги</li>
           </ul>
           <ul className="footer__list">
-            <li className="footer__item">Быстрые ссылки</li>
-            <li className="footer__item">Быстрые ссылки</li>
-            <li className="footer__item">Быстрые ссылки</li>
+            <li className="footer__item footer__item-title">Помощь и поддержка</li>
+            <li className="footer__item">Контакты</li>
+            <li className="footer__item">Условия и положения</li>
+            <li className="footer__item">Политика конфиденциальности</li>
           </ul>
           <ul className="footer__list">
-            <li className="footer__item">Быстрые ссылки</li>
-            <li className="footer__item">Быстрые ссылки</li>
-            <li className="footer__item">Быстрые ссылки</li>
+            <li className="footer__item footer__item-title">Свяжитесь с нами</li>
+            <li className="footer__item"><a href="mailto:info@preste.com" className="footer__item">info@preste.com</a></li>
+            <li className="footer__item"><a href="tel:+996 (702) 555-0122" className="footer__item">996 (702) 555-0122</a></li>
+            <li className="footer__item footer__item-l">г. Бишкек, ул. Тыныстанова, 56</li>
           </ul>
         </div>
            </div>
