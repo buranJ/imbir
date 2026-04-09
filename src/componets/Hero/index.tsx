@@ -1,7 +1,7 @@
 import Button from "../UI/Button/Button"
 import "./hero.scss"
 import imbir from "../../assets/Imgs/imbir.png"
-// import input from "../../assets/Imgs/imbir-input.png"
+import mb from "../../assets/Imgs/imbir-mb.png"
 
 function Hero() {
     return (
@@ -20,7 +20,8 @@ function Hero() {
                         </form>
                     </div>
                     <div className="hero__right">
-                        <img src={imbir} alt="imbir" />
+                        <img src={imbir} alt="imbir" className="hero__right-dt"/>
+                        <img src={mb} alt="imbir" className="hero__right-mb" />
                     </div>
                 </div>
             </div>

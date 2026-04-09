@@ -25,15 +25,21 @@ function Clinics() {
                 <div className="clinics__content">
                     <div className="clinics__top">
                         <h2 className="clinics__title">Клиники</h2>
+                        <h3 className="clinics__btn-mb">Все</h3>
                         <div className="clinics__top-loc">
                             <img src={loc1} alt="" />
                             <div className="clinics__top-text">г. Бишкек <span>Ленинский район</span></div>
                         </div>
                     </div>
                     <p className="clinics__text">Выберите интересующие вас параметры, чтобы ознакомиться с подходящими клиниками</p>
-                    <div style={{ display: 'flex', gap: '20px'  }}>
+                    <div
+                        style={{
+                            display: window.innerWidth <= 510 ? 'none' : 'flex',
+                            gap: '20px'
+                        }}
+                    >
 
-                   
+
                         <Filter
                             label="Специализация"
                             type="select"
@@ -41,7 +47,7 @@ function Clinics() {
                             options={['Все', 'Все', 'Все']}
                             onChange={setSpecialty}
                         />
-{/* 
+                        {/* 
                         <Filter
                             label="Стаж, лет"
                             type="range"
@@ -79,6 +85,28 @@ function Clinics() {
                             navigation={{
                                 prevEl: '.clinics__swiper-prev',
                                 nextEl: '.clinics__swiper-next',
+                            }}
+                            breakpoints={{
+                                0: {
+                                    slidesPerView: 3,
+                                    direction: 'vertical',
+                                },
+                                510: {
+                                    slidesPerView: 1,
+                                    direction: 'horizontal',
+                                },
+
+                                700: {
+                                    slidesPerView: 2,
+                                },
+                                1000: {
+                                    slidesPerView: 3,
+                                },
+                                1200: {
+                                    slidesPerView: 4,
+                                },
+
+
                             }}
                             modules={[Navigation]}
                             className="clinics__swiper">
@@ -142,7 +170,7 @@ function Clinics() {
                 </div>
             </div>
 
-        </section>
+        </section >
     )
 }
 

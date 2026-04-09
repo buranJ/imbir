@@ -218,4 +218,136 @@
         }
 
     }
+
+    &__btn-mb {
+        display: none;
+    }
+}
+
+@media (max-width: 1270px) {
+    .clinics__card {
+        width: 260px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .clinics__card {
+        width: 360px;
+    }
+}
+
+@media (max-width: 1160px) {
+    .clinics__card {
+        width: 300px;
+    }
+}
+
+@media (max-width: 999px) {
+    .clinics {
+         margin-top: 80px;
+        &__card {
+            width: 400px;
+        }
+
+        &__btn {
+            margin-left: 10px;
+        }
+    }
+
+}
+
+@media (max-width: 860px) {
+   
+    .clinics__card {
+        width: 320px;
+    }
+}
+
+@media (max-width: 700px) {
+    .clinics__card {
+        margin-left: 10%;
+        width: 400px;
+    }
+
+}
+
+@media (max-width: 510px) {
+    .clinics {
+         &__content{
+            padding: 20px;
+        }
+       
+        &__title {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        &__top-loc {
+            display: none;
+        }
+
+        &__text {
+            display: none;
+        }
+
+        &__top {
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        &__btn-mb {
+            display: block;
+            font-family: Onest;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 16px;
+            color: #FF7C63;
+            line-height: 130%;
+            letter-spacing: 0%;
+
+        }
+
+        &__nav {
+            margin-top: 12px;
+        }
+
+        &__card {
+            width: 359px;
+            height: 269px;
+            padding: 4px;
+            margin-left: 5%;
+
+            &-wrap {
+                margin: 0 auto;
+            }
+
+            &-img {
+                height: 180px;
+                width: 351px;
+                margin: 0 auto;
+            }
+
+            &-title {
+                font-size: 16px;
+            }
+
+            &-text,
+            &-desc {
+                font-size: 14px;
+                margin-top: 4px;
+            }
+
+        }
+
+        &__swiper {
+            height: 823px;
+            &-next,&-prev{
+                display:none;
+            }
+        }
+
+    }
+
+
+
 }

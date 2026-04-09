@@ -7,7 +7,10 @@ function Blog() {
         <section className="blog">
             <div className="container">
                 <div className="blog__content">
+                    <div className="blog__top">
                     <h2 className="blog__title">Блог</h2>
+                     <h3 className="blog__btn-mb">Все</h3>
+                    </div>
                     <p className="blog__card-desc">Comprehensive medical care tailored to your needs for a healthier life</p>
                     <div className="blog__main">
                         <div className="blog__left">

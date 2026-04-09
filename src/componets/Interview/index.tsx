@@ -15,7 +15,10 @@ function Interview() {
         <section className="interview">
             <div className="container">
                 <div className="interview__content">
+                    <div className="interview__top">
                     <h2 className="interview__title">Интервью</h2>
+                       <h3 className="interview__btn-mb">Все</h3>
+                    </div>
                     <p className="interview__text">Ознакомьтесь с интервью наших специалистов</p>
 
                     <div className="interview__nav">
@@ -28,6 +31,25 @@ function Interview() {
                             prevEl: '.interview__swiper-prev',
                             nextEl: '.interview__swiper-next',
                         }}
+                          breakpoints={{
+                                0: {
+                                    slidesPerView: 3,
+                                    direction: 'vertical',
+                                },
+                                510: {
+                                    slidesPerView: 1,
+                                    direction: 'horizontal',
+                                },
+
+                                700: {
+                                    slidesPerView: 2,
+                                },
+                                1000: {
+                                    slidesPerView: 3,
+                                }
+
+
+                            }}
                         modules={[Navigation]}
                         className="interview__swiper">
                         <SwiperSlide>  <div className="interview__card">
