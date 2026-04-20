@@ -1,0 +1,114 @@
+.specialists {
+  padding: 40px 0;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  &__location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &-icon {
+    // width: 48px;
+    // height: 48px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+
+    img {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  &__city {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  &__district {
+    font-size: 12px;
+    color: #8a8a8a;
+  }
+
+  &__subtitle {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #7a7a7a;
+  }
+
+  &__filters {
+    margin-top: 25px;
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+  }
+
+  &__filter {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    label {
+      font-size: 13px;
+      color: #555;
+    }
+
+    select {
+      width: 325px;
+      height: 44px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      padding: 0 12px;
+      background: #fff;
+    }
+  }
+
+  &__filter--range {
+    .range-box {
+      width: 325px;
+      height: 44px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      gap: 10px;
+      background: #fff;
+
+      span {
+        font-size: 12px;
+        // color: #555;
+      }
+
+      input {
+        flex: 1;
+        accent-color: #ff6b3d;
+      }
+    }
+  }
+
+  &__reset {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+
+    &:hover {
+      color: #ff6b3d;
+    }
+  }
+}
