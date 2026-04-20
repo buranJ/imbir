@@ -6,11 +6,13 @@ import Hero from "./componets/Hero";
 import Blog from "./componets/Blog";
 import Interview from "./componets/Interview";
 import Clinics from "./componets/Clinics";
+import Card from "./componets/UI/Card/Card";
 
 function App() {
   return (
     <>
       <Header />
+      <Card />
       <Hero/>
       <Home />
       <Clinics/>
