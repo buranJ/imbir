@@ -1,0 +1,167 @@
+.site {
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    &__title {
+        font-family: Onest;
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 40px;
+        color: #191A1B;
+        line-height: 130%;
+        letter-spacing: 0%;
+        margin-bottom: 40px;
+
+
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        padding: 12px;
+        border: 1px solid #E3E4E5;
+        gap: 16px;
+        width: 372px;
+        margin-top: 16px;
+        border-radius: 16px;
+        margin-bottom: 12px;
+
+
+
+    }
+
+    &__card {
+        display: flex;
+        padding: 12px;
+        border: 1px solid #E3E4E5;
+        width: 372px;
+        border-radius: 16px;
+
+
+        &-content {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            padding: 12px 0;
+
+            &:hover {
+                background-color: #FFF1EC;
+                border-radius: 16px;
+
+            }
+
+
+            img {
+                background-color: #FFF1EC;
+                border-radius: 24px;
+                padding: 10px;
+            }
+
+        }
+
+        &-text {
+            font-family: Onest;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 16px;
+            color: #191A1B;
+            line-height: 130%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+
+        }
+
+        &-desc {
+            font-family: Onest;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 14px;
+            color: #838A8D;
+            line-height: 130%;
+            letter-spacing: 0%;
+
+        }
+
+        &-title {
+            font-family: Onest;
+            font-weight: 600;
+            font-style: SemiBold;
+            font-size: 24px;
+            color: #F5653E;
+            line-height: 130%;
+            letter-spacing: 0%;
+
+        }
+
+        &-edtext {
+            font-family: Onest;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 14px;
+            color: #191A1B;
+            max-width: 348px;
+            line-height: 130%;
+            letter-spacing: 0%;
+
+        }
+
+        &-input {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            background: #FAFAFA;
+            padding: 12px;
+            border-radius: 12px;
+
+            &-content {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+            input{
+                color: #FFA18D;
+            }
+
+          
+        }
+          &-fb {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+
+                &-text {
+                    font-family: Onest;
+                    font-weight: 400;
+                    font-style: Regular;
+                    font-size: 12px;
+                    color: #838A8D;
+                    line-height: 130%;
+                    letter-spacing: 0%;
+                    max-width: 96px;
+
+                }
+
+                &-pt {
+                    font-family: Onest;
+                    font-weight: 500;
+                    font-style: Medium;
+                    font-size: 12px;
+                    color: #FF7C63;
+                    line-height: 130%;
+                    letter-spacing: 0%;
+                    text-align: center;
+                    border: 1px solid #FF7C63;
+                    padding: 4px 8px;
+                    border-radius: 8px;
+                    width: 42px;
+
+                }
+            }
+
+    }
+
+}
