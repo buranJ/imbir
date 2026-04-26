@@ -1,0 +1,29 @@
+.login {
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 40px;
+        align-items: start;
+    }
+
+    &__img {
+        height: 640px;
+        width: 48%;
+    }
+}
+
+@media (max-width:600px) {
+    .login {
+        background: #f0f0f0;
+        height: 100vh;
+        padding: 0;
+        width: 100%;
+    
+
+        &__img {
+            display: none;
+        }
+    }
+}
