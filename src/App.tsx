@@ -9,6 +9,8 @@ import Clinics from "./componets/Clinics";
 import Card from "./componets/UI/Card/Card";
 import ProfileHistoryCard from "./componets/ProfileHistoryCard";
 
+
+
 function App() {
   return (
     <>

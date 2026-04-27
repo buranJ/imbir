@@ -1,0 +1,10 @@
+.profile{
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: flex-start;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+}

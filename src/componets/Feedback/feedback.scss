@@ -1,9 +1,15 @@
 .feedback {
     margin-top: 92px;
+    width: 60%;
+
     &__content {
         display: flex;
         flex-direction: column;
         gap: 20px;
+    }
+
+    &__btn {
+        display: none;
     }
 
     &__top {
@@ -30,7 +36,7 @@
 
         input {
             border: 1px solid #E5E6E8;
-            width: 277;
+            width: 277px;
             height: 40px;
             padding: 8px 12px;
             padding-left: 40px;
@@ -70,7 +76,7 @@
 
     &__card {
         border: 1px solid #E5E6E8;
-        width: 940px;
+        width: 96%;
         border-radius: 16px;
         padding: 19.5px 16px;
 
@@ -83,7 +89,8 @@
             display: inline-flex;
             margin-top: 16px;
         }
-        &-top{
+
+        &-top {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -156,6 +163,47 @@
             letter-spacing: 0%;
             margin-top: 12px;
 
+        }
+    }
+}
+
+@media (max-width:600px) {
+    .feedback {
+        width: 98%;
+        margin-top: 0;
+
+        &__btn {
+            display: block;
+            width: 40px;
+            height: 40px;
+            padding: 8px 16px;
+            border-radius: 100px;
+            border: 1px solid #E5E6E8;
+            box-shadow: 0px 1px 2px 0px #0D0D1208;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+
+            &-img {
+                width: 16px;
+                height: 16px;
+                
+
+            }
+
+        }
+        &__top{
+            &-bot{
+                justify-content: center;
+            }
+        }
+      
+        form{
+            display: none;
+        }
+        &__card{
+            width: 92%;
         }
     }
 }
