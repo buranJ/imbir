@@ -10,15 +10,15 @@ function Login({ title, span,type, mode }) {
             <div className="container">
                 <div className="login__content">
                     <img src={image} alt="image" className="login__img" />
-                    {/* <Registration
+                    <Registration
                         title="С возвращением!"
                         span="Введите пароль от вашего аккаунта"
                          mode="login"
                           desc="Или продолжить с помощью"
                     >
                         <Input type="email" text="Введите вашу почту" title={"Электронная почта"}/>
-                    </Registration> */}
-                    <Saved/>
+                    </Registration>
+                    {/* <Saved/> */}
 
                 </div>
             </div>
