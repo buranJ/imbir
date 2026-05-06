@@ -1,0 +1,17 @@
+.clinicProfile {
+    margin-bottom: 120px;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 40px;
+        align-items: start;
+
+        @media (max-width:600px) {
+            flex-direction: column;
+        }
+    }
+
+
+}

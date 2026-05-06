@@ -9,10 +9,37 @@
     flex-direction: column;
     align-items: center;
     background: #fff;
+    max-width: 660px;
+    position: relative;
 
     &__top {
+
         &-btn {
-            display: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 100px;
+            border-width: 1px;
+            background-color: #fff;
+            border: 1px solid #E5E6E8;
+            box-shadow: 0px 1px 2px 0px #0D0D1208;
+            position: absolute;
+            top: 24px;
+            left: 24px;
+
+            &.active {
+                display: none;
+
+
+
+            }
+
+            &-img {
+                width: 16px;
+                height: 16px;
+            }
         }
     }
 
@@ -23,14 +50,7 @@
         background-color: #f0f0f0;
         border: 0;
 
-        &-mb {
-            display: none;
 
-        }
-
-        &.active {
-            display: none;
-        }
     }
 
     &__but {
@@ -77,38 +97,10 @@
         gap: 12px;
         margin-top: 32px;
 
-        &-mb {
-
-            order: 2;
-
-            &.active {
-                display: none;
-            }
-        }
-
-        &-code {
-            display: none;
-
-
-            &.active {
-                display: block;
-                font-family: Onest;
-                font-weight: 500;
-                font-style: Regular;
-                font-size: 16px;
-                color: #4C5052;
-                line-height: 130%;
-                letter-spacing: 0%;
-                margin-top: 32px;
-
-
-            }
-        }
-
     }
 
 
-    span {
+    &__span {
         color: #686F72;
         font-weight: 400;
         font-style: Regular;
@@ -124,21 +116,13 @@
         justify-content: center;
         order: 1;
 
-        &.active {
-            display: none;
-        }
     }
 
     &__inputs {
-        display: none;
-
-        &.active {
-            display: block;
-            display: flex;
-            gap: 12px;
-            align-items: center;
-            margin-top: 32px;
-        }
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        margin-top: 32px;
     }
 
     &__input {
@@ -147,6 +131,20 @@
         border-radius: 10px;
         padding-top: 8px 12px;
         border: 1px solid #E3E4E5;
+        text-align: center;
+        outline: none;
+
+        &:focus {
+            border-color: #F5653E;
+        }
+
+    }
+
+    &__bot {
+
+        &.active {
+            display: none;
+        }
 
     }
 
@@ -159,9 +157,6 @@
         margin-top: 16px;
         order: 3;
 
-        &.active {
-            display: none;
-        }
 
         &-btn {
             border: 1px solid #E5E6E8;
@@ -169,6 +164,7 @@
             width: 30%;
             display: flex;
             justify-content: center;
+            padding: 13px 26px;
 
         }
 
@@ -180,12 +176,57 @@
         }
     }
 
+    &__password {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 8px;
+        margin-top: 16px;
+        align-self: flex-start;
+
+
+        &-checkbox {
+            font-family: Onest;
+            font-weight: 400;
+            font-size: 14px;
+            color: #595E61;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+        }
+
+        &-input {
+
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        &-checkmark {
+            width: 16px;
+            height: 16px;
+            background-color: #ACB1B4; 
+            border-radius: 50%; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease; 
+        }
+
+        &-input:checked+&-checkmark {
+            background-color: #FFA18D;
+        }
+
+    }
+
+
 
 }
 
 @media (max-width:1024px) {
     .reg {
-        padding: 40px;
+        padding: 55px;
     }
 }
 
@@ -215,8 +256,7 @@
         background: #f0f0f0;
 
         &__top {
-            padding-bottom: 16px;
-            padding-top: 16px;
+            padding: 16px;
             border-bottom-right-radius: 16px;
             border-bottom-left-radius: 16px;
             border-bottom-width: 1px;
@@ -228,17 +268,10 @@
             align-items: flex-start;
 
             &-btn {
-                display: block;
-                width: 40px;
-                height: 40px;
-                border-radius: 100px;
-                border: 1px solid #E5E6E8;
-                box-shadow: 0px 1px 2px 0px #0D0D1208;
-                background: #fff;
+                position: static;
 
-                &-img {
-                    width: 16px;
-                    height: 16px;
+                &.active {
+                    display: block;
                 }
 
             }
@@ -302,13 +335,6 @@
                     display: none;
                 }
             }
-
-            &-code {
-                &.active {
-                    font-weight: 400;
-                    margin-top: 16px;
-                }
-            }
         }
 
         &__bot {
@@ -323,10 +349,6 @@
             flex-direction: column;
             align-items: center;
 
-
-            &.active {
-                display: none;
-            }
 
         }
 

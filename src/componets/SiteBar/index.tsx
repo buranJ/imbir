@@ -2,16 +2,19 @@ import React from "react";
 import user from "../../assets/icons/user.png";
 import "./site.scss";
 
-function SiteBar() {
+function SiteBar({mode}) {
   return (
     <section className="site">
       <div className="site__content">
+        <div className="site__top">
         <h2 className="site__title">Мой профиль</h2>
+         </div>
         <div className="site__card site__card-mb">
           <img src={user} alt="" className="site__card-img" />
           <h3 className="site__card-text">Айжан К. К.</h3>
           <h3 className="site__card-email">aijank@gmail.com</h3>
         </div>
+       
         <div className="site__cards">
           <div className="site__card-content">
             <img src={user} alt="" />
@@ -34,7 +37,7 @@ function SiteBar() {
           <img src={user} alt="" />
           <h3 className="site__card-text">Айжан К. К.</h3>
         </div>
-        <div className="site__cards">
+        <div className={`site__cards ${mode==="clinic"?"active":""}`}>
           <p className="site__card-desc">Статус пользователя</p>
           <h3 className="site__card-title">Витамин С</h3>
           <p className="site__card-edtext">

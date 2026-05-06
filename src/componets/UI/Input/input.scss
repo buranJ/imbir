@@ -12,20 +12,48 @@
         letter-spacing: 0%;
         margin-top: 24px;
 
+
+    }
+
+    &__wrap {
+        position: relative;
+
     }
 
     &__input {
+        max-width: 500px;
         width: 500px;
         height: 48px;
         border-radius: 10px;
         padding: 8px 12px;
         outline: none;
         border: 1px solid #E3E4E5;
+        box-sizing: border-box;
+
 
         &:focus {
             border-color: #F5653E;
         }
 
+        &::placeholder {
+            font-family: Onest;
+            font-weight: 400;
+            color: #838A8D;
+            font-size: 16px;
+
+
+        }
+
+
+    }
+
+    &__img {
+        width: 20px;
+        height: 20px;
+        right: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
     }
 }
 
@@ -48,7 +76,8 @@
 @media (max-width:600px) {
     .input {
         &__label {
-            width: 98%;
+            // width: 98%;
+            margin-top: 16px;
         }
 
         &__input {

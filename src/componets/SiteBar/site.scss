@@ -1,11 +1,33 @@
 .site {
     width: 35%;
 
+    @media (max-width:600px) {
+        background: #f0f0f0;
+        padding-bottom: 70px;
+    }
+
     &__content {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
 
+        @media (max-width:600px) {
+            align-items: center;
+        }
+
+    }
+
+    &__top {
+        background: #fff;
+
+        @media (max-width:600px) {
+            width: 94%;
+            padding: 16px;
+            border-bottom-right-radius: 16px;
+            border-bottom-left-radius: 16px;
+            margin-bottom: 8px;
+
+        }
     }
 
     &__title {
@@ -18,6 +40,9 @@
         letter-spacing: 0%;
         margin-bottom: 40px;
 
+        @media (max-width:800px) {
+            font-size: 30px;
+        }
 
     }
 
@@ -31,8 +56,11 @@
         margin-top: 16px;
         border-radius: 16px;
         margin-bottom: 12px;
+        background-color: #fff;
 
-
+        &.active {
+            display: none;
+        }
 
     }
 
@@ -42,6 +70,7 @@
         border: 1px solid #E3E4E5;
         width: 90%;
         border-radius: 16px;
+        background-color: #fff;
 
         &-email {
             display: none;
@@ -122,6 +151,7 @@
             padding: 12px;
             border-radius: 12px;
 
+
             &-content {
                 display: flex;
                 justify-content: space-between;
@@ -179,6 +209,7 @@
 
         &__title {
             font-size: 24px;
+            margin-bottom: 0;
         }
 
         &__card {
@@ -202,6 +233,7 @@
                 flex-direction: column;
                 align-items: center;
                 padding-top: 60px;
+                background-color: #fff;
 
             }
 

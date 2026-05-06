@@ -1,0 +1,64 @@
+.mobCard {
+    width: 432px;
+    border-radius: 20px;
+    padding: 8px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid #E3E4E5;
+    gap: 4px;
+
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    &__title {
+        font-family: Onest;
+        font-weight: 500;
+        font-size: 18px;
+        color: #191A1B;
+        margin-bottom: 4px;
+        margin-top: 8px;
+    }
+
+    &__desc {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-family: Onest;
+        font-weight: 400;
+        font-size: 16px;
+        color: #838A8D;
+
+        &-span1 {
+            color: #FF7C63;
+        }
+
+        &-span2 {
+            padding-left: 8px;
+            &::before {
+                 content: "•";
+            }
+        }
+
+    }
+
+    &__text {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-family: Onest;
+        font-weight: 400;
+        font-size: 16px;
+        color: #191A1B;
+
+    }
+
+    &__label {
+        justify-self: end;
+          margin-left: auto;
+    }
+}
