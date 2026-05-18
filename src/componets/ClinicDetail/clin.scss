@@ -27,7 +27,7 @@
 
     &__main {
         display: grid;
-        grid-template-columns: 1fr 400px;
+        grid-template-columns: 1fr 760px;
         gap: 32px;
 
         @media (max-width: 1024px) {
@@ -42,6 +42,7 @@
 
     &__slider {
         width: 100%;
+        max-width: 560px;
 
         &-main {
             position: relative;
@@ -138,6 +139,8 @@
         display: flex;
         flex-direction: column;
         gap: 16px;
+        max-width: 760px;
+        width: 100%;
     }
 
     &__card {
@@ -145,6 +148,22 @@
         border-radius: 12px;
         padding: 20px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        position: relative;
+
+        &-like {
+            width: 48px;
+            height: 48px;
+            border-radius: 100px;
+            border: 1px solid #E5E6E8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: none;
+            position: absolute;
+            top: 16px;
+            right: 16px;
+
+        }
 
         &-title {
             font-size: 24px;
@@ -175,6 +194,7 @@
 
         &-bot {
             display: flex;
+            justify-content: space-around;
             gap: 24px;
             margin-top: 20px;
             padding-top: 16px;
@@ -206,11 +226,12 @@
 
     &__btns {
         display: flex;
-        flex-direction: column;
         gap: 12px;
     }
 
     &__btn {
         width: 100%;
+        display: flex;
+        justify-content: center;
     }
 }

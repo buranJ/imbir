@@ -21,6 +21,8 @@ import Appointement from "./componets/Appointment";
 import Choise from "./componets/UI/Choise/Choise";
 import MobCard from "./componets/UI/MobCard/MobCard";
 import card from "./assets/Imgs/blog-card.png"
+import ClinicDetail from "./componets/ClinicDetail";
+import ClinicFeedback from "./componets/ClinicFeedback";
 
 
 
@@ -37,13 +39,15 @@ function App({tit, inputText}) {
       <Blog/>
       <Footer /> */}
       {/* <Profile /> */}
-      {/* <ClinicDetail/> */}
+      <ClinicDetail/>
+      <ClinicFeedback/>
+      {/* <Clinics/> */}
       {/* <ClinicProfile/>
      <Blog/>
         <Article/>
         <BlogPage/> */}
-      <Appointement/>
-     <Choise tit="Выберите клинику" inputText="Поиск клиники"> <MobCard title="Med Center" add="ул. Московская, 189" span1="4.85" text="(255)" span2="12 лет опыта" img={card} imgWidth={"104px"} imgHeight={"104px"}/> </Choise>
+      {/* <Appointement/> */}
+     {/* <Choise tit="Выберите клинику" inputText="Поиск клиники"> <MobCard title="Med Center" add="ул. Московская, 189" span1="4.85" text="(255)" span2="12 лет опыта" img={card} imgWidth={"104px"} imgHeight={"104px"}/> </Choise> */}
 
       {/* <Login />
       <Register />

@@ -3,6 +3,7 @@ import Button from "../UI/Button/Button";
 
 import loc from "../../assets/icons/location.png";
 import time from "../../assets/icons/clock.svg";
+import like from "../../assets/icons/heart.png"
 
 import "./clin.scss";
 
@@ -108,6 +109,7 @@ function ClinicDetail({ bg, color, className }) {
 
             <div className="clin__right">
               <div className="clin__card">
+                <button className="clin__card-like"><img src={like} alt="" className="clin__card-like-img" /></button>
                 <h3 className="clin__card-title">MED Clinic</h3>
                 <p className="clin__card-text">Многопрофильная клиника</p>
                 <p className="clin__card-text">

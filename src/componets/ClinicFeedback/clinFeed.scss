@@ -1,0 +1,105 @@
+.clinFeed {
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__title {
+        font-family: Onest;
+        font-weight: 600;
+        font-size: 40px;
+        color: #191A1B;
+        margin-bottom: 28px;
+
+    }
+
+    &__top {
+        display: flex;
+        gap: 12px;
+    }
+
+    &__card {
+        border: 1px solid #E3E4E5;
+        border-radius: 16px;
+        padding: 24px 32px;
+        display: flex;
+        flex-direction: column;
+        max-width: 194px;
+        width: 100%;
+        box-sizing: border-box;
+
+        &-top {
+            display: flex;
+            gap: 12px;
+        }
+
+        &-title {
+            font-family: Onest;
+            font-weight: 600;
+            font-size: 24px;
+            color: #191A1B;
+
+        }
+
+        &-text {
+            font-family: Onest;
+            font-weight: 400;
+            font-size: 16px;
+            color: #686F72;
+            margin-top: 12px;
+
+        }
+
+        &-bot {
+            &-title {
+                font-family: Onest;
+                font-weight: 500;
+                font-size: 20px;
+                color: #191A1B;
+                margin-bottom: 24px;
+
+            }
+        }
+
+        &-label {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-family: Onest;
+            font-weight: 400;
+            font-size: 16px;
+            color: #191A1B;
+            margin-bottom: 24px;
+
+        }
+
+        &-input {
+            border: 1px solid #E5E6E8;
+            max-width: 368px;
+            border-radius: 12px;
+            padding: 16px;
+            box-sizing: border-box;
+
+        }
+
+        &-textarea {
+            border: 1px solid #E5E6E8;
+            max-width: 368px;
+            height: 87px;
+            border-radius: 12px;
+            border-width: 1px;
+            padding: 3px 4px;
+            box-sizing: border-box;
+
+        }
+    }
+    &__bot{
+        max-width: 400px;
+        box-sizing: border-box;
+    }
+    &__btn{
+        display: flex;
+        justify-content: center;
+    }
+}
